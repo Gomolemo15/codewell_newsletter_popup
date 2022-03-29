@@ -1,0 +1,157 @@
+/* Setup */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --button-blue: #522aff;
+  --p-color: #5a5a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Utils */
+
+.text-center {
+  text-align: center;
+}
+
+.center-vertical {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: var(--p-color);
+  font-size: 12.8px;
+  /* font-size: 14px; */
+}
+
+/* Site */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#popup-wrapper {
+  background-color: white;
+  max-width: 439px;
+}
+
+#topPopup {
+  background-image: url("../assets/Pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--button-blue);
+}
+
+#topPopup > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 2em 0;
+  max-width: 12em;
+}
+
+#bottomPopup {
+  padding: 1.6em 1em;
+}
+
+#input_container {
+  margin: 1em 0em;
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 0.4em;
+}
+
+input {
+  border: 1px solid #eaeaf4;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+input::placeholder {
+  color: #babbcc;
+}
+
+button {
+  background-color: var(--button-blue);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0.2em;
+  font-weight: 600;
+}
+
+#avatar-container {
+  margin: 2em 0em 1em 0em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+#avatar-nameContainer > :nth-child(1) {
+  color: black;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Utils */
+  p {
+    color: var(--p-color);
+    /* font-size: 12.8px; */
+    font-size: 14px;
+  }
+
+  body {
+    background-image: url("../assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+  }
+
+  #popup-wrapper {
+    border-radius: 0.8em;
+  }
+
+  #topPopup {
+    border-radius: 0.8em 0.8em 0 0;
+    padding: 0.4em 0;
+  }
+
+  #bottomPopup {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    color: var(--p-color);
+    /* font-size: 12.8px; */
+    font-size: 16px;
+  }
+
+  #popup-wrapper {
+    background-color: white;
+    max-width: 492px;
+  }
+
+  #input_container {
+    grid-template-columns: 2.8fr 1.2fr;
+  }
+
+  input,
+  button {
+    border-radius: 0.4em;
+    padding: 1.2em 0.6em;
+  }
+}
