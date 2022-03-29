@@ -41,7 +41,6 @@ body {
 
 #popup-wrapper {
   background-color: white;
-  max-width: 439px;
 }
 
 #topPopup {
@@ -121,6 +120,7 @@ button {
 
   #popup-wrapper {
     border-radius: 0.8em;
+    max-width: 439px;
   }
 
   #topPopup {
